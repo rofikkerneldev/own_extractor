@@ -101,7 +101,64 @@ ruu="$toolsdir/$HOST/bin/RUU_Decrypt_Tool"
 
 romzip="$(realpath $1)"
 romzipext="${romzip##*.}"
-PARTITIONS="system vendor cust odm oem factory product xrom modem dtbo boot recovery tz systemex oppo_product preload_common system_ext system_other opproduct reserve india my_preload my_odm my_stock my_operator my_country my_product my_company my_engineering my_heytap"
+PARTITIONS="
+vendor
+system
+system_ext
+product
+odm
+cust
+
+optics
+prism
+
+mi_ext
+
+my_bigball
+my_engineering
+my_manifest
+my_region
+my_carrier
+my_heytap
+my_product
+my_stock
+my_preload
+my_odm
+my_operator
+my_country
+my_company
+
+tr_carrier
+tr_company
+tr_manifest
+tr_misc
+tr_overlayfs
+tr_preload
+tr_product
+tr_region
+
+preas
+preavs
+preload
+product_h
+patch_hn
+
+oem
+factory
+xrom
+modem
+dtbo
+boot
+recovery
+tz
+systemex
+oppo_product
+preload_common
+system_other
+opproduct
+reserve
+india
+"
 EXT4PARTITIONS="system vendor cust odm oem factory product xrom systemex oppo_product preload_common"
 OTHERPARTITIONS="tz.mbn:tz tz.img:tz modem.img:modem NON-HLOS:modem boot-verified.img:boot dtbo-verified.img:dtbo"
 
