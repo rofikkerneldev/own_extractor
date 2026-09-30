@@ -158,6 +158,8 @@ system_other
 opproduct
 reserve
 india
+vgc
+dyn
 "
 EXT4PARTITIONS="system vendor cust odm oem factory product xrom systemex oppo_product preload_common"
 OTHERPARTITIONS="tz.mbn:tz tz.img:tz modem.img:modem NON-HLOS:modem boot-verified.img:boot dtbo-verified.img:dtbo"
